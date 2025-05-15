@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from sklearn.datasets import make_blobs
+
 from sklearn.metrics import adjusted_rand_score
 from sklearn.base import BaseEstimator, ClusterMixin
 
@@ -108,35 +108,3 @@ class KMeansClustering(BaseEstimator, ClusterMixin):
             return supervised_score
 
         return unsupervised_score
-
-
-if __name__ == '__main__':
-
-    data, true_labels = make_blobs(n_samples=100, n_features=3, centers=3)
-
-    data = pd.DataFrame(data)
-
-    k_means = KMeansClustering(k=3)
-    k_means.fit(data)
-
-    labels = k_means.fit_predict(data)
-
-    ari = k_means.score(data, y=true_labels)
-    print("Adjusted Rand Index (ARI):", ari)
-
-    data = data.to_numpy()
-
-    plt.scatter(data[:, 0], data[:, 1], c=labels, label="Clusters", alpha=0.7)
-    plt.scatter(
-        k_means.centroids[:, 0],
-        k_means.centroids[:, 1],
-        c="red",
-        marker="*",
-        s=200,
-        label="Centroids",
-    )
-    plt.title("KMeans Clustering")
-    plt.xlabel("Feature 1")
-    plt.ylabel("Feature 2")
-    plt.legend()
-    plt.show()
