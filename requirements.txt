@@ -1,8 +1,11 @@
-sklearn
+scikit-learn
 matplotlib
 numpy
 pandas
 torch
+torchmetrics
 torchvision
 torchaudio
 xgboost
+tensorflow
+keras
