@@ -14,7 +14,7 @@ Usando algoritmos de regressão linear para prever a qualidade de vinhos.
 
 ### Classificação
 
-Usando algoritmos de classificação para determinar se um indivíduo tem renda maior que $ $50.000$.
+Usando algoritmos de classificação para determinar se um indivíduo tem renda maior que $\$50.000$.
 
 [classificacao.ipynb](./1-regressao_classificacao/notebooks/classificacao.ipynb)
 
