@@ -23,3 +23,9 @@ Usando algoritmos de classificação para determinar se um indivíduo tem renda 
 O segundo período possuiu apenas um desafio, implementar algoritmos de clusterização para analisar performance acadêmica de alunos.
 
 [clusterizacao.ipynb](./2-clusterizacao/notebooks/clusterizacao.ipynb)
+
+## Terceiro período
+
+Implementação de _Multi-Layer Perceptron_ para classificação de corpos astronômicos em estrelas, galáxias e quasares. Além disso, também foi feita uma implementação de uma rede neural do zero para aplicação no dataset _MNIST Digits Classification_.
+
+[mlp.ipynb](./3-perceptron_mlp/notebooks/mlp.ipynb)
