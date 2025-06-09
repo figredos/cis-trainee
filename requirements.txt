@@ -9,3 +9,5 @@ torchaudio
 xgboost
 tensorflow
 keras
+ipykernel
+ipywidgets
